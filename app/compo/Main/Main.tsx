@@ -12,10 +12,11 @@ import PageTransition from './PageTransition';
 import Zero from '@/app/(pages)/hero/page';
 import Skills from '@/app/(pages)/skills/page';
 
-import Projects from '@/app/(pages)/projects/page';
-import Testimonials from '@/app/(pages)/testimonials/page';
 import Contact from '@/app/(pages)/contact/page';
 import Timeline from '@/app/(pages)/timeline/page';
+import Projects from '@/app/(pages)/projects/page';
+import Testimonials from '@/app/(pages)/testimoni/page';
+
 
 export default function Main() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -44,14 +45,16 @@ export default function Main() {
         <Timeline />
         </PageTransition>
       </SwiperSlide>
+    
+  
       <SwiperSlide>
         <PageTransition key={activeIndex + 1}>
-        <Projects />
+       <Projects />
         </PageTransition>
       </SwiperSlide>
       <SwiperSlide>
         <PageTransition key={activeIndex + 1}>
-        <Testimonials />
+       <Testimonials />
         </PageTransition>
       </SwiperSlide>
       <SwiperSlide>

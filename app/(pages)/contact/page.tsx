@@ -10,7 +10,7 @@ const Contact: React.FC = () => {
                     <p className='text-white font-bold mt-2 text-center'> Lorem Ipsum  whscrambled it to make a type specimen book.</p>
                 </div>
             </div>
-            <div className="container">
+            <div className="containerr">
                 <div className="row">
                     <div className="contact-info hidden md:block">
                         <div className="contact-info-item">
