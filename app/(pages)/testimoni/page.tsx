@@ -1,3 +1,4 @@
+"use client"
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Navigation } from 'swiper/modules';
@@ -34,7 +35,7 @@ const Testimonials = () => {
         <div className="testimonials-container px-4 md:px-10 py-8">
             <div className="text-white text-center md:mt-8 md:mb-8">
                 <h2 className='text-4xl md:text-4xl text-yellow-400 font-bold'>What Our Clients Say</h2>
-                <p className='font-bold mt-3'>Here’s how our clients feel about our services.</p>
+                <p className='font-bold mt-3'>Heres how our clients feel about our services.</p>
             </div>
             <Swiper
                 modules={[Autoplay, Navigation]}
@@ -68,7 +69,7 @@ const Testimonials = () => {
                                     <h3 className="text-lg font-semibold text-gray-800">{data.name}</h3>
                                 </div>
                             </div>
-                            <p className="text-gray-600 italic">"{data.testimonial}"</p>
+                            <p className="text-gray-600 italic">{data.testimonial}</p>
                         </div>
                     </SwiperSlide>
                 ))}
