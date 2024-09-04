@@ -7,8 +7,7 @@ import 'swiper/css/mousewheel';
 import './Main.css';
 
 import { Pagination, Mousewheel } from 'swiper/modules';
-import Hero from '../Hero';
-import SlideTransition from ''; // Import the transition component
+
 import PageTransition from './PageTransition';
 import Zero from '@/app/(pages)/hero/page';
 import Skills from '@/app/(pages)/skills/page';

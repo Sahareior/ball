@@ -80,11 +80,7 @@ const Timeline = () => {
         }
     };
 
-    // Format the date labels for display
-    const formattedValues = VALUES.map((date) => {
-        const options = { year: 'numeric' };
-        return new Date(date).toLocaleDateString(undefined, options);
-    });
+
 
     return (
         <div className="timeline-container bg-slate-900 text-white px-4 md:px-8 py-6">
@@ -92,11 +88,12 @@ const Timeline = () => {
                 <h2 className="text-2xl md:text-4xl text-yellow-400 font-bold text-center">My Career History Timeline</h2>
                 <div className="timeline-content-container mt-8">
                     <div className="timeline-box py-6 md:py-10">
-                        <HorizontalTimeline
-                            index={value}
-                            indexClick={(index) => setValue(index)}
-                            values={VALUES}
-                        />
+                    <HorizontalTimeline
+    index={value}
+    indexClick={(index: number) => setValue(index)}
+    values={VALUES}
+/>
+
                     </div>
                     <motion.div 
                         className="timeline-text md:mt-0 mt-10"

@@ -1,6 +1,11 @@
 import { motion } from 'framer-motion';
+import { ReactNode } from 'react';
 
-const PageTransition = ({ children }) => {
+interface PageTransitionProps {
+  children: ReactNode;
+}
+
+const PageTransition: React.FC<PageTransitionProps> = ({ children }) => {
   const variants = {
     initial: { 
       opacity: 0, 
