@@ -1,0 +1,88 @@
+.light {
+    position: absolute;
+    width: 8px;  /* Increase size for better visibility */
+    height: 8px; /* Increase size for better visibility */
+    background-color: white;
+    border-radius: 50%; /* Make the particles round */
+    box-shadow: 0 0 30px 10px rgba(255, 255, 255, 0.75); /* Stronger glow effect */
+    opacity: 0; /* Initial opacity */
+    top: 100vh;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: auto;
+}
+
+.x1 {
+    animation: floatUp 4s infinite linear;
+    transform: scale(1.0);
+    left: 10%;
+}
+
+.x2 {
+    animation: floatUp 7s infinite linear;
+    transform: scale(1.6);
+    left: 20%;
+}
+
+.x3 {
+    animation: floatUp 2.5s infinite linear;
+    transform: scale(.5);
+    left: 30%;
+}
+
+.x4 {
+    animation: floatUp 4.5s infinite linear;
+    transform: scale(1.2);
+    left: 40%;
+}
+
+.x5 {
+    animation: floatUp 8s infinite linear;
+    transform: scale(2.2);
+    left: 50%;
+}
+
+.x6 {
+    animation: floatUp 3s infinite linear;
+    transform: scale(.8);
+    left: 60%;
+}
+
+.x7 {
+    animation: floatUp 5.3s infinite linear;
+    transform: scale(3.2);
+    left: 70%;
+}
+
+.x8 {
+    animation: floatUp 4.7s infinite linear;
+    transform: scale(1.7);
+    left: 80%;
+}
+
+.x9 {
+    animation: floatUp 4.1s infinite linear;
+    transform: scale(0.9);
+    left: 90%;
+}
+
+@keyframes floatUp {
+    0% { 
+        top: 100vh; 
+        opacity: 0; 
+    }
+    25% { 
+        opacity: 1; 
+    }
+    50% { 
+        top: 0vh; 
+        opacity: 1; 
+    }
+    75% { 
+        opacity: 1; 
+    }
+    100% { 
+        top: -100vh; 
+        opacity: 0; 
+    }
+}

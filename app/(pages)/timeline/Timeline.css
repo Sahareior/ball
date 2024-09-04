@@ -1,0 +1,53 @@
+.timeline-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+    min-height: 100vh; /* Full viewport height */
+    padding: 2rem; /* Spacing around the container */
+}
+
+.timeline-heading {
+    font-size: 2rem;
+    font-weight: bold;
+   
+
+    margin-bottom: 1rem; /* Space below the heading */
+}
+
+.timeline-content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1400px; /* Max width to prevent stretching */
+}
+
+.timeline-box {
+    width: 90%;
+    overflow-y: hidden;
+    max-width: 1000px; /* Limit the width of the timeline */
+    height: 120px; /* Height of the timeline */
+    margin-bottom: 1rem; /* Space below the timeline */
+}
+
+.timeline-text {
+    text-align: center;
+    
+    padding: 1rem;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(255, 251, 251, 0.994); /* Subtle shadow for depth */
+}
+
+
+.timeline-content h3 {
+    font-size: 1.5rem;
+    color: #333; /* Dark text color */
+    margin-bottom: 0.5rem; /* Space below the heading */
+    padding: 30px;
+}
+
+.timeline-content p {
+    font-size: 1rem;
+    color: #555; /* Slightly lighter text color for readability */
+}

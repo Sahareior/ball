@@ -1,0 +1,98 @@
+* {
+	-moz-box-sizing: border-box; 
+	-webkit-box-sizing: border-box; 
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	max-width: 960px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.skillset {
+	margin-top: 100px;
+}
+
+.skill-lockup {
+	max-width: 450px;
+	width: 100%;
+	float: left;
+	margin-right: 40px;
+}
+
+.mr {
+	margin-right: 0;
+}
+
+.mb {
+	margin-bottom: 5px;
+}
+
+.skill-info {
+	display: block;
+	margin-bottom: 20px;
+}
+
+.skill-name {
+	float: left;
+	color: #666;
+}
+
+.skill-status {
+	float: right;
+	color: #c4c4c4;
+	font-size: 0.8em;
+}
+
+.skill-bar {
+	display: block;
+	max-width: 450px;
+	width: 100%;
+	height: 5px;
+	background: #e3e3e5;
+	clear: both;
+	margin: 20px 0;
+}
+
+.skill-level {
+	display: table;
+	height: 5px;
+	background: #c6a60e;
+	-webkit-animation: growSkill 10s linear;
+	animation: growSkill 10s linear;
+}
+
+/* Universal Animation for Dynamic Widths */
+@-webkit-keyframes growSkill {
+	from { width: 0%; }
+	to { width: 100%; }
+}
+
+@keyframes growSkill {
+	from { width: 0%; }
+	to { width: 100%; }
+}
+
+/*-----------------------
+	  Media queries
+-------------------------*/
+
+@media screen and (max-width: 955px) {
+	.skillset {
+		padding: 20px;
+	}
+	.skill-lockup {
+		max-width: 700px;
+		width: 100%;
+		float: none;
+		margin: 0 auto;
+	}
+
+	.skill-bar {
+		max-width: 700px;
+		width: 100%;
+	}
+}

@@ -1,0 +1,13 @@
+.mySwiper {
+  width: 100vw;
+    height: 100vh; /* Ensures the Swiper takes the full height of the viewport */
+  }
+  
+  .swiper-slide {
+    width: 100vw;
+    height: 100vh; /* Makes sure each slide takes the full height of the Swiper */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
